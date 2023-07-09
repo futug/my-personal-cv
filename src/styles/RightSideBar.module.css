@@ -1,0 +1,30 @@
+.RightSideBar {
+    color: #73808d;
+    max-width: 200px;
+}
+
+.title {
+    color: #73808d;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: "Arial";
+    letter-spacing: 5px;
+    font-size: 14px;
+    transition: all 0.3s ease-in-out;
+}
+
+.contactsLink {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    color: #73808d;
+    margin-bottom: 0.3rem;
+}
+
+.informBlock {
+    margin-bottom: 1rem;
+}
+
+.informBlock:hover .title {
+    color: #000;
+}

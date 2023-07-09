@@ -1,0 +1,18 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem 0;
+}
+
+.headerSubtitle {
+    font-weight: normal;
+}
+
+.headerImage {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    background: url("../photo_2023-06-02_15-01-37.jpg") no-repeat top / cover;
+    margin-right: 2rem;
+}

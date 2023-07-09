@@ -1,0 +1,19 @@
+* {
+    font-family: Arial;
+}
+
+a {
+    text-decoration: none;
+    color: #73808d;
+}
+main {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0 0 0;
+}
+
+.App {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}

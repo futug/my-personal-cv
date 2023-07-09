@@ -1,0 +1,17 @@
+.expBlock {
+    max-width: 500px;
+}
+
+.expBlock > p {
+    padding: 0.2rem 0;
+    margin: 0;
+}
+.expTitle {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.expDate {
+    color: #73808d;
+    font-size: 14px;
+}

@@ -1,0 +1,33 @@
+.mainContent {
+    max-width: 500px;
+}
+
+.titleMain {
+    color: #73808d;
+    font-weight: normal;
+    text-transform: uppercase;
+    font-family: "Arial";
+    letter-spacing: 5px;
+    font-size: 14px;
+}
+
+.block {
+    margin-top: 4rem;
+}
+.eduTitle {
+    font-weight: bold;
+    font-size: 18px;
+    padding: 0.2rem 0;
+    margin: 0;
+}
+
+.dateGroup {
+    display: flex;
+    gap: 1rem;
+    color: #73808d;
+    font-size: 14px;
+}
+.dateGroup > p {
+    padding: 0.2rem 0;
+    margin: 0;
+}
