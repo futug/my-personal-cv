@@ -26,7 +26,7 @@ const RightSideBar = () => {
                 </div>
                 <div className={styles.contactsLink}>
                     <LiaTelegramPlane />
-                    <a href="tg://resolve?domain=<tim116250990>">@tim116250990</a>
+                    <a href="tg://resolve?domain=tim1162509">@tim1162509</a>
                 </div>
             </div>
             <div className={styles.informBlock}>
