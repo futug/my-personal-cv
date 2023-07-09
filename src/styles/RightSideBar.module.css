@@ -39,5 +39,8 @@ a {
 @media (max-width: 768px) {
     .RightSideBar {
         text-align: center;
+        width: 100%;
+        max-width: 100%;
+        margin-top: 3rem;
     }
 }
