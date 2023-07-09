@@ -7,8 +7,9 @@ const MainContent = () => {
         <div className={styles.mainContent}>
             <h3 className={styles.titleMain}>About me</h3>
             <p>
-                Having gained over 10 years of experience in sales, I am confident in my ability to be highly adaptable, handle stressful situations
-                effectively, and possess excellent communication skills.
+                Hi! 👋 <br /> Having gained over 10 years of experience in sales, I am confident in my ability to be highly adaptable, handle stressful
+                situations effectively, and possess excellent communication skills. Everyday I try to improve my code skills and discover something new on the
+                path of a web developer.
             </p>
             <div className={styles.block}>
                 <h3 className={styles.titleMain}>Experience</h3>
