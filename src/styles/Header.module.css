@@ -16,8 +16,6 @@
     height: 150px;
     background: url("../photo.webp") no-repeat top / cover, url("../photo.jpg") no-repeat top / cover, #73808d;
     margin-right: 2rem;
-    transform-origin: right;
-    /* transition: all 0.3s ease-in-out; */
 }
 
 .titleGroup {
