@@ -14,8 +14,9 @@
     border-radius: 50%;
     width: 150px;
     height: 150px;
-    background: url("../photo_2023-06-02_15-01-37.jpg") no-repeat top / cover;
+    background: url("../photo.webp") no-repeat top / cover, url("../photo.jpg") no-repeat top / cover, #73808d;
     margin-right: 2rem;
+    transform-origin: right;
     /* transition: all 0.3s ease-in-out; */
 }
 
@@ -28,7 +29,6 @@
         border-radius: 0;
         width: 100%;
         height: 100%;
-        background: url("../photo.jpg") no-repeat center center / cover;
         position: absolute;
         top: 0;
         left: 0;
