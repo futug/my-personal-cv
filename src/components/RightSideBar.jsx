@@ -18,15 +18,15 @@ const RightSideBar = () => {
                 </div>
                 <div className={styles.contactsLink}>
                     <AiOutlineMail />
-                    <a href="mailto:savazkitim@gmail.com">Mail me</a>
+                    <a href="mailto:savazkitim@gmail.com">savazkitim@gmail.com</a>
                 </div>
                 <div className={styles.contactsLink}>
                     <BsTelephone />
-                    <a href="tel:+996550107209">Call me</a>
+                    <a href="tel:+996550107209">+996 550 107209</a>
                 </div>
                 <div className={styles.contactsLink}>
                     <LiaTelegramPlane />
-                    <a href="tg://resolve?domain=@tim116250990">Text me</a>
+                    <a href="tg://resolve?domain=<tim116250990>">@tim116250990</a>
                 </div>
             </div>
             <div className={styles.informBlock}>
