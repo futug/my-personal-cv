@@ -35,3 +35,9 @@ a {
 .informBlock:hover .title {
     color: #000;
 }
+
+@media (max-width: 768px) {
+    .RightSideBar {
+        text-align: center;
+    }
+}
