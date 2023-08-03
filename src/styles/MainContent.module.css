@@ -1,9 +1,10 @@
 .mainContent {
     max-width: 500px;
+    padding-bottom: 50px;
 }
 
 .titleMain {
-    color: #73808d;
+    color: var(--secondary-text);
     font-weight: normal;
     text-transform: uppercase;
     font-family: "Arial";

@@ -4,15 +4,17 @@ import { BsTelephone } from "react-icons/bs";
 import { LiaTelegramPlane } from "react-icons/lia";
 import styles from "../styles/RightSideBar.module.css";
 import SkillPlate from "./SkillPlate";
+import { useTranslation } from "react-i18next";
 
 const RightSideBar = () => {
+    const { t } = useTranslation();
     return (
         <div className={styles.RightSideBar}>
             <div className={styles.informBlock}>
-                <p className={styles.title}>Contact me</p>
+                <p className={styles.title}>{t("contact")}</p>
                 <div className={styles.contactsLink}>
                     <AiFillGithub />
-                    <a target="_blank" href="https://github.com/futug">
+                    <a target="_blank" rel="noreferrer" href="https://github.com/futug">
                         My GitHub
                     </a>
                 </div>
@@ -22,7 +24,7 @@ const RightSideBar = () => {
                 </div>
                 <div className={styles.contactsLink}>
                     <BsTelephone />
-                    <a href="tel:+996550107209">+996 550 107209</a>
+                    <a href="tel:+7(950) 325-30-29">+7(950) 325-30-29</a>
                 </div>
                 <div className={styles.contactsLink}>
                     <LiaTelegramPlane />
@@ -30,16 +32,19 @@ const RightSideBar = () => {
                 </div>
             </div>
             <div className={styles.informBlock}>
-                <p className={styles.title}>Skills</p>
+                <p className={styles.title}>{t("skills")}</p>
                 <SkillPlate skillname={"Html"} skilllevel={"80%"} />
                 <SkillPlate skillname={"Css"} skilllevel={"75%"} />
                 <SkillPlate skillname={"JavaScript"} skilllevel={"70%"} />
                 <SkillPlate skillname={"BEM"} skilllevel={"80%"} />
-                <SkillPlate skillname={"Redux"} skilllevel={"30%"} />
+                <SkillPlate skillname={"Redux/RTK"} skilllevel={"30%"} />
                 <SkillPlate skillname={"ReactJs"} skilllevel={"30%"} />
+                <SkillPlate skillname={"RestAPI"} skilllevel={"30%"} />
+                <SkillPlate skillname={"Strapi"} skilllevel={"30%"} />
+                <SkillPlate skillname={"Git"} skilllevel={"50%"} />
                 <SkillPlate skillname={"Figma"} skilllevel={"70%"} />
-                <SkillPlate skillname={"Communication"} skilllevel={"70%"} />
-                <SkillPlate skillname={"Stress resistance"} skilllevel={"70%"} />
+                <SkillPlate skillname={t("comm")} skilllevel={"70%"} />
+                <SkillPlate skillname={t("stress")} skilllevel={"70%"} />
                 <SkillPlate skillname={"English - B2"} skilllevel={"70%"} />
             </div>
         </div>

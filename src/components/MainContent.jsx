@@ -1,32 +1,31 @@
 import React from "react";
 import { Experience } from "./Experience";
 import styles from "../styles/MainContent.module.css";
+import { useTranslation } from "react-i18next";
 
 const MainContent = () => {
+    const { t } = useTranslation();
     return (
         <div className={styles.mainContent}>
-            <h3 className={styles.titleMain}>About me</h3>
-            <p>
-                Hi! 👋 <br /> Having gained over 10 years of experience in sales, I am confident in my ability to be highly adaptable, handle stressful
-                situations effectively, and possess excellent communication skills. Everyday I try to improve my code skills and discover something new on the
-                path of a web developer.
-            </p>
+            <h3 className={styles.titleMain}>{t("about")}</h3>
+            <p>{t("aboutText")}</p>
+            <p>{t("aboutText2")}</p>
+            <ul>
+                <li>{t("listItem1")}</li>
+                <li>{t("listItem2")}</li>
+                <li>{t("listItem3")}</li>
+            </ul>
             <div className={styles.block}>
-                <h3 className={styles.titleMain}>Experience</h3>
-                <Experience
-                    exptitle={"Html - developer"}
-                    expcompany={"Freelance"}
-                    expdate={"February, 2023 - present - 6 months"}
-                    expdescribe={"Creating attractive and well-functioning web interfaces in a short time based on customer instructions"}
-                />
+                <h3 className={styles.titleMain}>{t("experience")}</h3>
+                <Experience exptitle={t("expTitle")} expcompany={t("expCompany")} expdate={t("expDate")} expdescribe={t("expResp")} />
             </div>
             <div className={styles.block}>
-                <h3 className={styles.titleMain}>Education</h3>
-                <p className={styles.eduTitle}>Kazan Chemical Technology University, Kazan</p>
+                <h3 className={styles.titleMain}>{t("edu")}</h3>
+                <p className={styles.eduTitle}>{t("eduPlace")}</p>
                 <div className={styles.dateGroup}>
-                    <p>Sep, 2010</p>
+                    <p>{t("eduDateFrom")}</p>
                     <p> - </p>
-                    <p>Jun, 2015</p>
+                    <p>{t("eduDateTo")}</p>
                 </div>
             </div>
         </div>

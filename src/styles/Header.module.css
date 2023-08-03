@@ -22,6 +22,39 @@
     transition: all 0.3s ease-in-out;
 }
 
+.langChoise {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.separator {
+    width: 1px;
+    background-color: var(--secondary-text);
+    height: 16px;
+}
+.choiseButton {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    padding: 0;
+    color: var(--primary-text);
+}
+
+.choiseButton::after {
+    content: "";
+    width: 0%;
+    height: 1px;
+    background-color: var(--primary-text);
+    display: block;
+    transition: 0.3s ease-in-out;
+}
+
+.choiseButton:hover:after {
+    width: 100%;
+}
+
 @media (max-width: 768px) {
     .headerImage {
         border-radius: 0;
@@ -45,5 +78,13 @@
     .titleGroup {
         color: #fff;
         margin-left: 20px;
+    }
+    .separator,
+    .choiseButton {
+        color: #fff;
+    }
+
+    .choiseButton::after {
+        background-color: #fff;
     }
 }
