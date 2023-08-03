@@ -5,6 +5,14 @@ import { useTranslation } from "react-i18next";
 
 const MainContent = () => {
     const { t } = useTranslation();
+
+    const startDate = new Date(2023, 1, 1);
+    const currentDate = new Date();
+
+    const period = currentDate - startDate;
+    const millisecondsInMonth = 1000 * 60 * 60 * 24 * 30.436875;
+    const periodInMonths = Math.ceil(period / millisecondsInMonth);
+
     return (
         <div className={styles.mainContent}>
             <h3 className={styles.titleMain}>{t("about")}</h3>
@@ -17,7 +25,12 @@ const MainContent = () => {
             </ul>
             <div className={styles.block}>
                 <h3 className={styles.titleMain}>{t("experience")}</h3>
-                <Experience exptitle={t("expTitle")} expcompany={t("expCompany")} expdate={t("expDate")} expdescribe={t("expResp")} />
+                <Experience
+                    exptitle={t("expTitle")}
+                    expcompany={t("expCompany")}
+                    expdate={`${t("expDate")} - ${periodInMonths} ${t("expDate2")}`}
+                    expdescribe={t("expResp")}
+                />
             </div>
             <div className={styles.block}>
                 <h3 className={styles.titleMain}>{t("edu")}</h3>

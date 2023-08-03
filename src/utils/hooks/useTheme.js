@@ -12,3 +12,4 @@ export const useTheme = () => {
 
     return [theme, setTheme];
 };
+const randomNumber = Math.floor(Math.random() * 256);
