@@ -6,7 +6,7 @@ import { useTranslation } from "react-i18next";
 const MainContent = () => {
     const { t } = useTranslation();
 
-    const startDate = new Date(2023, 1, 1);
+    const startDate = new Date(2022, 9, 10);
     const currentDate = new Date();
 
     const period = currentDate - startDate;
